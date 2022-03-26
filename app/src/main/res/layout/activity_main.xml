@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgCarta"
+        android:layout_width="wrap_content"
+        android:layout_height="360dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/carta1" />
+
+    <Button
+        android:id="@+id/btnEmpezar"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imgCarta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#8BC34A"
+        android:text="EMPEZAR"
+        android:textSize="15dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnTerminar"
+        android:text="TERMINAR"
+        android:textSize="15dp"
+        android:backgroundTint="#FF4E4E"
+        android:layout_below="@+id/btnEmpezar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEstado"
+        android:text="Presione empezar"
+        android:textSize="15dp"
+        android:layout_below="@+id/btnTerminar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHistorial"
+        android:text="Historial"
+        android:textSize="15dp"
+        android:layout_below="@+id/txtEstado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:scrollbars="vertical"/>
+
+</RelativeLayout>
